@@ -1,0 +1,42 @@
+/* pages/readPassage.wxss */
+.top-btn{
+    margin: 5rpx;
+    padding: 5rpx;
+    font-size: 30rpx;
+    color: gray;
+}
+.leftAlignPassage {
+    text-align: left;
+    text-indent: 32px;
+}
+.centerAlignPassage {
+    text-align: center;
+}
+.btn1{
+    font-size: 40rpx;
+    background-color: #d4b2a5;
+    bottom: 20rpx;
+    position: absolute;
+    left: 3%;
+}
+.btn2{
+    width: 100%;
+    font-size: 40rpx;
+    background-color:#b3d4a5;
+    position: absolute;
+    bottom: 20rpx;
+    right: 3%;
+}
+.bottom{
+    position: fixed;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;/* 如果把盒子设置为弹性盒子,必须要加的 */
+    flex-direction: row;/* 设置一个大盒子内容垂直排列*/
+    align-items: center;/* 设置一个大盒子内容居中排列*/
+    bottom: 20rpx;
+}
+.bottomFill{
+    height: 130rpx;
+}
+  

@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/desk/index",
+        "pages/library/index",
+        "pages/mine/index",
+        "pages/chapterCatagory/index",
+        "pages/readChapter/index",
+        "pages/readPassage/index",
+        "pages/myBooks/index",
+        "pages/settings/index",
+        "pages/helps/index",
+        "pages/finish/index",
+        "pages/punch/index"
+    ],
+    "window": {
+        "backgroundColor": "@backgroundColor",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "@navigatorBarBackgroundColor",
+        "navigationBarTitleText": "恒计划",
+        "navigationBarTextStyle": "@navigationBarTextStyle",
+        "enablePullDownRefresh": true
+    },
+    "sitemapLocation": "sitemap.json",
+    "darkmode": true,
+    "themeLocation": "theme.json",
+    "style": "v2",
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "@tabBarSelectedColor",
+        "backgroundColor": "@tabBarBackgroundColor",
+        "list": [
+            {
+                "pagePath": "pages/desk/index",
+                "iconPath": "images/desk-gray.png",
+                "selectedIconPath": "@selectedIconPathDesk",
+                "text": "课桌"
+            },
+            {
+                "pagePath": "pages/library/index",
+                "iconPath": "images/library-gray.png",
+                "selectedIconPath": "@selectedIconPathLibrary",
+                "text": "图书馆"
+            },
+            {
+                "pagePath": "pages/mine/index",
+                "iconPath": "images/mine-gray.png",
+                "selectedIconPath": "@selectedIconPathMine",
+                "text": "我的"
+            }
+        ]
+    }
+}

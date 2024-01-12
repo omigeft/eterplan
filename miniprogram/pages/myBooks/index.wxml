@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="myContainer" wx:if="{{!bookList.length}}">
+    <view class="title">您还没有书籍，</view>
+    <view class="title">快去图书馆寻找你想要学习的书吧！</view>
+  </view>
+
+  <view class='books' wx:if="{{bookList.length}}">
+    <view wx:for="{{bookList}}" wx:key="name" wx:for-item="book">
+      <view class='myContainer'>
+        <view class="books_info" data-index="{{index}}" bindtap="onClickBooksInfo">
+            <view class='books_info_title'>{{book.title}}</view>
+            <image class="books_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

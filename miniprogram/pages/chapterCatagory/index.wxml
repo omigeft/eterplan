@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class='myContainer'>
+    <view class='book_title'>{{bookTitle}}</view>
+    <view class="line"></view>
+    <view class='book_introduction'>{{bookIntroduction}}</view>
+  </view>
+
+  <view class='myContainer' wx:if="{{chapterList.length==0}}">
+    暂无可学习内容
+  </view>
+
+  <view class='chapters' wx:if="{{chapterList.length!=0}}">
+    <view wx:for="{{chapterList}}" wx:key="index" wx:for-item="chapter">
+      <view class='myContainer' data-index="{{index}}" bindtap="onClickChapterInfo">
+        <view class="chapters_info">
+            <view class='chapters_info_title'>{{chapter.title}}</view>
+            <image class="chapters_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+    <view class="bottom" wx:if="{{!learning}}">
+        <button class="btn1" bindtap="getBook" style="width:300rpx" wx:if="{{!haveThisBook}}">获取该书籍</button>
+        <button class="btn2" bindtap="addBook" style="width:300rpx" wx:if="{{haveThisBook&&!readingThisBook}}">加入学习计划</button>
+        <button class="btn3" bindtap="removeBook" style="width:300rpx" wx:if="{{haveThisBook&&readingThisBook}}">移出学习计划</button>
+    </view>
+    <view class="bottomFill" wx:if="{{!learning}}"></view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

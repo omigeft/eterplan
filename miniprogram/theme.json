@@ -1,0 +1,22 @@
+{
+    "light": {
+        "navigatorBarBackgroundColor": "#ee7635",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f6f6f6",
+        "tabBarBackgroundColor": "#ffffff",
+        "tabBarSelectedColor": "#000000",
+        "selectedIconPathDesk": "images/desk.png",
+        "selectedIconPathLibrary": "images/library.png",
+        "selectedIconPathMine": "images/mine.png"
+    },
+    "dark": {
+        "navigatorBarBackgroundColor": "#141728",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#000000",
+        "tabBarBackgroundColor": "#141728",
+        "tabBarSelectedColor": "#ffffff",
+        "selectedIconPathDesk": "images/desk-white.png",
+        "selectedIconPathLibrary": "images/library-white.png",
+        "selectedIconPathMine": "images/mine-white.png"
+    }
+}

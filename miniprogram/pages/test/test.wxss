@@ -1,0 +1,16 @@
+.calendar{
+    margin-top: 10%;
+ }
+ .month{
+       display: flex;
+       flex-flow: row wrap;
+       font-size: 1.1rem;  
+ }
+ .item{
+       width: 14.28%;
+       text-align: center;
+       line-height: 3rem;
+ }
+ .othe{
+    color: grey
+ }

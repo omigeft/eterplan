@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="myContainer">
+        <view class="title">恭喜你已复习完本次计划中的内容！</view>
+        <view class="content">不要忘了下一次及时打开恒计划复习推送的计划哦~</view>
+        <view class="myButton">
+            <button bindtap="goToPunch">点我打卡</button>
+        </view>
+    </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

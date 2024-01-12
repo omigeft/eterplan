@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+page {
+  /* background-color: #f6f6f6; */
+  padding-bottom: 60rpx;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 52rpx;
+    margin-bottom: 30rpx;
+}
+
+.content{
+    margin-bottom: 30rpx;
+}
+
+.line {
+  width: 95%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.environment {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24rpx;
+  margin-top: 25%;
+}

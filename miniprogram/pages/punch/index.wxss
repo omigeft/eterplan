@@ -1,0 +1,86 @@
+/**index.wxss**/
+
+page {
+  /* background-color: #f6f6f6; */
+  padding-bottom: 60rpx;
+}
+
+.title{
+    font-size: 44rpx;
+}
+
+.number{
+    font-weight: 800;
+    font-size: 60rpx;
+}
+
+.content{
+    margin-bottom: 30rpx;
+}
+
+.calendar{
+    margin-top: 10%;
+ }
+
+ .month{
+       display: flex;
+       flex-flow: row wrap;
+       font-size: 1.1rem;  
+ }
+
+.item{
+      width: 14.28%;
+      text-align: center;
+      line-height: 3rem;
+}
+
+.futureItem{
+    color: #c6c6c6;
+}
+
+@media (prefers-color-scheme: light) {
+
+    .monthTitle{
+        width: 100%;
+        text-align: center;
+        line-height: 3rem;
+        background-color: #f6f6f6;
+        border-radius: 15rpx;
+     }
+
+    .punchedItem{
+        font-weight: 1000;
+        color: #ee7635;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .monthTitle{
+        width: 100%;
+        text-align: center;
+        line-height: 3rem;
+        background-color: #282e50;
+        border-radius: 15rpx;
+     }
+
+    .punchedItem{
+        font-weight: 1000;
+        color: #81462e;
+    }
+
+}
+
+.line {
+  width: 95%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.environment {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24rpx;
+  margin-top: 25%;
+}

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!--<view id="myLogin">
+    <block wx:if='{{isLogin}}'>
+      <image id='myIcon' src='{{src}}'></image>
+      <text id='nickName'>{{nickName}}</text>
+    </block>
+    <button wx:else open-type='getUserInfo' bindgetuserinfo='getMyInfo'>未登录，点此登录</button>
+  </view>-->
+  
+  <view class='options'>
+    <view wx:for="{{optionList}}" wx:key="title" wx:for-item="option">
+        <view class="line" wx:if="{{index}}"></view>
+        <view class="options_info" data-index="{{index}}" bindtap="onClickOption">
+            <view class='options_info_text'>
+                <view class='options_info_text_title'>{{option.title}}</view>
+            </view>
+            <image class="options_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+    </view>
+  </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

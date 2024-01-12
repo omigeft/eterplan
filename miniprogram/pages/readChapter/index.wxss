@@ -1,0 +1,115 @@
+/* pages/readPassage.wxss */
+.top-btn{
+    margin: 5rpx;
+    padding: 5rpx;
+    font-size: 30rpx;
+    color: gray;
+}
+.leftAlignPassage {
+    text-align: left;
+    text-indent: 32px;
+}
+.centerAlignPassage {
+    text-align: center;
+}
+.onePassage{
+    margin-top: 35rpx;
+    margin-bottom: 35rpx;
+    font-size: 40rpx;
+}
+
+@media (prefers-color-scheme: light) {
+
+    .btn1{
+        font-size: 40rpx;
+        background-color: #e06b6b;
+        bottom: 20rpx;
+        position: absolute;
+        left: 3%;
+    }
+
+    .btn2{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#8de469;
+        bottom: 20rpx;
+        position: absolute;
+        right: 3%;
+    }
+
+    .btn3{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#ee7635;
+        bottom: 20rpx;
+        left:60%;
+    }
+
+    .btn4{
+        width: 100%;
+        padding: 30rpx;
+        background-color:#d1d1d1;
+        bottom: 20rpx;
+        left: 60%;
+    }
+
+}
+@media (prefers-color-scheme: dark) {
+
+    .btn1{
+        font-size: 40rpx;
+        background-color: #7a4149;
+        bottom: 20rpx;
+        position: absolute;
+        left: 3%;
+    }
+
+    .btn2{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#507d48;
+        bottom: 20rpx;
+        position: absolute;
+        right: 3%;
+    }
+
+    .btn3{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#81462e;
+        bottom: 20rpx;
+        left:60%;
+    }
+
+    .btn4{
+        width: 100%;
+        padding: 30rpx;
+        background-color:#72747c;
+        bottom: 20rpx;
+        left: 60%;
+    }
+    }
+
+.chapter_title{
+    font-size: 55rpx;
+    text-align: left;
+    margin: 30rpx;
+}
+.line {
+  width: 90%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.bottom{
+    position: fixed;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;/* 如果把盒子设置为弹性盒子,必须要加的 */
+    flex-direction: row;/* 设置一个大盒子内容垂直排列*/
+    align-items: center;/* 设置一个大盒子内容居中排列*/
+    bottom: 20rpx;
+}
+.bottomFill{
+    height: 130rpx;
+}

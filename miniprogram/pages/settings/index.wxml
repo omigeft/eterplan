@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="myContainer">
+    <view class="title">设置您的额定记忆率</view>
+    <picker mode="selector" range='{{selectMemoryRate}}' range-key='key' bindchange='memoryRateChange' value='{{selectMemoryRateIndex}}'>
+        <view class="selectOptions">{{selectMemoryRate[selectMemoryRateIndex].key}}</view>
+    </picker>
+  </view>
+  <view class="myContainer">
+    <view class="title">夜间模式</view>
+    <view class="title">跟随系统设置</view>
+    <!-- <switch checked="{{nightMode}}" bindchange="changeNightMode" /> -->
+  </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="myContainer">
+        <view class="calender">
+            <view class="month">
+                <view class="monthTitle">
+                    <picker mode="date" fields="month" bindchange='monthChange'>{{yearData}}年{{monthData}}月</picker>
+                </view> 
+                <view class="item" wx:for="{{ daysInWeek }}">
+                    {{ item }}
+                </view>
+                <view class="item" wx:for="{{ dateData }}">
+                    <view wx:if="{{item.status==0}}">{{ item.day }}</view>
+                    <view class="futureItem" wx:if="{{item.status==1}}">{{ item.day }}</view>
+                    <view class="punchedItem" wx:if="{{item.status==2}}">{{ item.day }}</view>
+                </view>
+                
+            </view>
+        </view>
+    </view>
+
+    <view class="myContainer">
+        <view class="title">
+            已连续打卡
+            <view class="number">{{consecutivePunchNumber}}</view>
+            天
+        </view>
+    </view>
+
+    <view class="myContainer" wx:if="{{status==0}}">
+        <view class="title">
+            已无需复习内容，今日可打卡！
+        </view>
+        <view class="myButton">
+            <button bindtap="punchToday">点我打卡</button>
+        </view>
+    </view>
+
+    <view class="myContainer" wx:if="{{status==1}}">
+        <view class="title">
+            打卡成功!
+        </view>
+        <view class="myButton">
+            <button bindtap="returnToDesk">回到首页</button>
+        </view>
+    </view>
+    
+    <view class="myContainer" wx:if="{{status==2}}">
+        <view class="title">
+            今日已打卡
+        </view>
+        <view class="myButton">
+            <button bindtap="returnToDesk">回到首页</button>
+        </view>
+    </view>
+
+    <view class="myContainer" wx:if="{{status==3}}">
+        <view class="title">
+            需要先复习完今日推送的内容才可以打卡哦~快去复习吧！
+        </view>
+    </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

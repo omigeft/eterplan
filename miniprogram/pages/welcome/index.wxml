@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="title">欢迎使用 艾宾浩斯·背多分！</view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

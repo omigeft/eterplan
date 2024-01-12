@@ -1,0 +1,53 @@
+<!--index.wxml-->
+
+<view class="container" >
+
+    <view class="myContainer" wx:if="{{haveAnyBook}}">
+        <view class="title">
+            已连续打卡
+            <view class="number">{{consecutivePunchNumber}}</view>
+            天
+        </view>
+    </view>
+
+  <view class="myContainer" wx:if="{{completeLoading&&!haveAnyBook}}">
+    <view class="title">您的课桌上还没有书籍，</view>
+    <view class="title">快去图书馆寻找你想要学习的书吧！</view>
+  </view>
+
+  <!--<view class="myContainer" wx:if="{{haveAnyBook&&(reviewBookNumber==0)&&(newBookNumber==0)}}">
+    <view class="title">暂时没有需要学习的内容呢</view>
+    <view class="title">去图书馆寻找新的书学习？</view>
+    <view class="title">或者休息一下？</view>
+  </view>-->
+
+  <view class="haveBook" wx:if="{{completeLoading&&haveAnyBook}}">
+    <view class="myContainer" wx:if="{{reviewBookNumber}}">
+        <view class="title">已为您智能生成复习计划</view>
+        <view class="line" />
+        <view class="title">需要复习书籍数
+            <view class="number">{{reviewBookNumber}}</view>
+        </view>
+        <view class="title">需要复习章节数
+            <view class="number">{{reviewChapterNumber}}</view>
+        </view>
+        <view class="myButton">
+            <button bindtap="startToReview">点我复习</button>
+        </view>
+    </view>
+
+    <view class="myContainer">
+        <view class="title">学习新内容！</view>
+        <view class="myButton">
+            <button bindtap="startToLearn">点我学习</button>
+        </view>
+    </view>
+  </view>
+  
+  <!-- <view bindtap="getBook">
+    <button>刷新学习计划</button>
+  </view> -->
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

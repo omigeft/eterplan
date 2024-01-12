@@ -1,0 +1,84 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+@media (prefers-color-scheme: light) {
+
+    page{
+        background-color: #f6f6f6;
+    }
+
+    .myContainer{
+        background-color: #ffffff;
+        margin-top: 40rpx;
+        margin-right: 40rpx;
+        margin-left: 40rpx;
+        margin-bottom: 40rpx;
+        text-align: center;
+        padding-top:35rpx;
+        padding-right:35rpx;
+        padding-left:35rpx;
+        padding-bottom:35rpx;
+        border-radius: 20rpx;
+        box-shadow: 5rpx 5rpx 20rpx 0rpx rgb(0, 0, 0, 0.3);
+    }
+
+    .myButton{
+        background-color: #ee7635;
+        border-radius: 20rpx;
+        margin-top: 35rpx;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    page{
+        background-color: #000000;
+    }
+
+    .myContainer{
+        background-color: #141728;
+        margin-top: 40rpx;
+        margin-right: 40rpx;
+        margin-left: 40rpx;
+        margin-bottom: 40rpx;
+        text-align: center;
+        padding-top:35rpx;
+        padding-right:35rpx;
+        padding-left:35rpx;
+        padding-bottom:35rpx;
+        border-radius: 20rpx;
+        box-shadow: 5rpx 5rpx 20rpx 0rpx rgb(0, 0, 0, 0.3);
+    }
+    
+    .myButton{
+        background-color: #81462e;
+        border-radius: 20rpx;
+        margin-top: 35rpx;
+    }
+
+}
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+page {
+  /*background: #f6f6f6;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

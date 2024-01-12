@@ -1,0 +1,129 @@
+/**index.wxss**/
+
+page {
+    /* background-color: #f6f6f6; */
+    padding-bottom: 60rpx;
+  }
+  
+  .book_title{
+      font-size: 60rpx;
+      text-align: left;
+      margin: 30rpx;
+  }
+  
+  .book_introduction{
+      font-size: 35rpx;
+      text-align: left;
+      margin-top: 10rpx;
+  }
+  
+  .chapters_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chapters_info_title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 40rpx;
+  }
+  
+  .chapters_item {
+    padding: 30rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chapters_item_icon {
+    margin-left: 30rpx;
+    width: 30rpx;
+    height: 30rpx;
+  }
+  
+  .line {
+    width: 90%;
+    margin: 0 auto;
+    height: 2rpx;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+@media (prefers-color-scheme: light) {
+
+    .btn1{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#ee7635;
+        bottom: 20rpx;
+        padding: 30rpx;
+    }
+
+    .btn2{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#8de469;
+        padding: 30rpx;
+        bottom: 20rpx;
+        
+    }
+
+    .btn3{
+        width: 100%;
+        font-size: 40rpx;
+        padding: 30rpx;
+        background-color:#e06b6b;
+        bottom: 20rpx;
+        left:60%；
+    }
+
+}
+@media (prefers-color-scheme: dark) {
+
+    .btn1{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#81462e;
+        bottom: 20rpx;
+        padding: 30rpx;
+    }
+    
+    .btn2{
+        width: 100%;
+        font-size: 40rpx;
+        background-color:#507d48;
+        padding: 30rpx;
+        bottom: 20rpx;
+        
+    }
+
+    .btn3{
+        width: 100%;
+        font-size: 40rpx;
+        padding: 30rpx;
+        background-color:#7a4149;
+        bottom: 20rpx;
+        left:60%；
+    }
+    
+}
+  
+  .bottom{
+      position: fixed;
+      width: 90%;
+      margin: 0 5%;
+      display: flex;/* 如果把盒子设置为弹性盒子,必须要加的 */
+      flex-direction: row;/* 设置一个大盒子内容垂直排列*/
+      align-items: center;/* 设置一个大盒子内容居中排列*/
+      bottom: 20rpx;
+  }
+  
+  .bottomFill{
+      height: 90rpx;
+  }
+  
+  .environment {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 24rpx;
+    margin-top: 25%;
+  }
+  

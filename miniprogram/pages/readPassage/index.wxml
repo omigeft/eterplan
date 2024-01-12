@@ -1,0 +1,24 @@
+<!--pages/readPassage.wxml-->
+<view>
+  <view class="top">
+    <button class="top-btn">🗑 太简单/不重要，不再背</button>
+  </view>
+  <view class='myContainer'>
+    <view class="leftAlignPassage" wx:if="{{passage&&leftAlign}}">
+        <view wx:key="_id" wx:for="{{passage[0].text}}">
+            {{item}}
+        </view>
+    </view>
+    <view class="centerAlignPassage" wx:if="{{passage&&centerAlign}}">
+        <view wx:key="_id" wx:for="{{passage[0].text}}">
+            {{item}}
+        </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <button class = "btn1" bindtap="tishi" style="width:300rpx">已忘记</button>
+    <button class = "btn2" bindtap="tishi" style="width:300rpx">已掌握</button>
+  </view>
+  <view class="bottomFill"></view>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+</view>

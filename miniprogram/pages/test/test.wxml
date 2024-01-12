@@ -1,0 +1,15 @@
+<view class="sign-wrapper">
+    <view class="calendar">
+      <view class="month">
+
+        <view class="item" wx:for="{{ week }}">
+            {{ item }}
+        </view>
+        <view class="item {{ item.type != 'curr' ? 'othe' : '' }}" 
+        wx:for="{{ dateData }}">
+            {{ item.day }}
+        </view>
+
+      </view>
+    </view>
+  </view>

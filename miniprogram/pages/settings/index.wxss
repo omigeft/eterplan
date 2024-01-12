@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+page {
+  /* background-color: #f6f6f6; */
+  padding-bottom: 60rpx;
+}
+
+@media (prefers-color-scheme: light) {
+
+    .selectOptions{
+        background-color: #ececec;
+        border-radius: 15rpx;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .selectOptions{
+        background-color: #282e50;
+        border-radius: 15rpx;
+    }
+
+}
+
+.title{
+    margin-bottom: 20rpx;
+}
+
+.line {
+  width: 95%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.environment {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24rpx;
+  margin-top: 25%;
+}

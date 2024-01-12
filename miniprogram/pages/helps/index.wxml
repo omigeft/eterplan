@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="myContainer">
+        <view class="title">复习计划生成原理：</view>
+        <view class="content">
+            <view class="paragraph">本小程序利用艾宾浩斯遗忘曲线和用户设置的记忆率，根据一个章节的背诵时间，使用设计好的算法智能生成背诵计划推送给用户。</view>
+        </view>
+    </view>
+
+    <view class="myContainer">
+        <view class="title">使用教程：</view>
+        <view class="content">
+            <view class="paragraph">先进入图书馆获取想要学习的书，获取时自动加入学习计划，对于在计划内的书，可以按章节学习。</view>
+            <view class="paragraph">对于每个章节，先新学习第一次掌握，掌握之后，等待一段时间（比如几个小时或一两天，因用户设置的额定记忆率而异），便会在复习计划中推送该章节供用户复习。</view>
+            <view class="paragraph">根据每个人记忆能力和知识难度不同，用户可以自己设置额定记忆率，来产生不同间隔的复习推送。</view>
+            <view class="paragraph">每天复习完推送的内容，暂时已经没有需要复习的内容时，可进行打卡，来督促自己学习。</view>
+        </view>
+    </view>
+
+  <view class="myContainer">
+    <view class="title">联系方式：</view>
+    <view class="content">
+        <view class="paragraph">欢迎问题反馈，请点击图示位置，</view>
+        <view class="paragraph">在其中即可找到问题反馈按钮。</view>
+        <image class="imamge1" src="../../images/helps1.png" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

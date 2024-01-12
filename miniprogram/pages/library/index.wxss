@@ -1,0 +1,51 @@
+/**index.wxss**/
+
+page {
+  /* background-color: #f6f6f6; */
+  padding-bottom: 60rpx;
+}
+
+.title {
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  font-size: 44rpx;
+  margin-bottom: 35rpx;
+}
+
+.books_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.books_info_title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 40rpx;
+}
+
+.books_item {
+  padding: 30rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.books_item_icon {
+  margin-left: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.line {
+  width: 95%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.environment {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24rpx;
+  margin-top: 25%;
+}
