@@ -4,7 +4,7 @@ App({
   onLaunch: function () {
 
     this.globalData = {
-        envId: 'cloud1-5g76riuyb0e7f357',
+        envId: 'cloud1',
         haveGetOpenId: false,
         openId: '',
         cloudFunction: 'myCloudFunctions',
