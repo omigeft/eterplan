@@ -62,3 +62,7 @@ app.js中需要把参数修改为你的云开发环境应有的参数。本小�
 ![7](assets/7.png)
 
 更具体的可以查看根目录中的视频[video.mp4](video.mp4)。
+
+## 开原许可证
+
+使用本仓库源码时请遵守[MIT License](LICENSE)。
